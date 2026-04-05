@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="register-box">
+    <h2>Вход</h2>
+
+    {% if error %}
+    <div class="errors">
+        {{ error }}
+    </div>
+    {% endif %}
+    <form method="post">
+    {% csrf_token %}
+
+    <div class="input-group">
+        <input type="text" name="username" required>
+        <label>Username</label>
+        <i class="fa fa-user"></i>
+    </div>
+
+    <div class="input-group">
+        <input type="password" name="password" required>
+        <label>Password</label>
+        <i class="fa fa-lock"></i>
+    </div>
+
+    <button type="submit" class="btn">Login</button>
+</form>
+
+    <p>Нет аккаунта? <a href="{% url 'register' %}">Регистрация</a></p>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="glass">
+    <h1>Добро пожаловать, {{ request.user.username }} 👋</h1>
+
+    <p>Ты успешно вошёл в систему.</p>
+
+    <div style="margin-top: 20px;">
+        <a href="{% url 'profile' %}" class="btn">Профиль</a>
+        <a href="{% url 'logout' %}"class="btn btn-logout">Выйти</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,209 @@
+/* ===== Общие настройки ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ===== Блок регистрации ===== */
+.register-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.register-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #5a67d8;
+}
+
+.errors {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+/* плавное появление */
+.register-box {
+    animation: fadeIn 0.6s ease;
+    }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ссылка */
+a {
+    color: #667eea;
+    text-decoration: none;
+    }
+a:hover {
+    text-decoration: underline;
+    }
+
+/* стекляный эффект */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    }
+
+/* кнопка логаута */
+.btn-logout {
+    background: #ff4d4d;}
+    }
+.btn-logout:hover{
+    background: #e63939;
+    }
+/* загаловки */
+h1, h2 {
+    font-weight: 600;
+    }
+
+/* ===== FLOATING LABELS ===== */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    color: #888;
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+    background: white;
+    padding: 0 5px;
+}
+
+/* магия */
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -8px;
+    font-size: 11px;
+    color: #667eea;
+}
+
+/* ===== ИКОНКИ ===== */
+.input-group i {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    color: #aaa;
+}
+
+/* ===== КНОПКА ===== */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+}
+
+/* нажатие */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* ===== ОШИБКИ ===== */
+.errors {
+    background: #ffe5e5;
+    color: #cc0000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+/* ===== АНИМАЦИЯ ===== */
+.register-box {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-group input:focus {
+    border-color: #667eea;}
+    box-shadow: 0 0 8px rgba(102,126,234,0.4);
+    }

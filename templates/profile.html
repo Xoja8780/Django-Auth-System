@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<div class="glass">
+     <h2>Профиль пользователя</h2>
+
+    <p><strong>Username:</strong> {{ request.user.username }}</p>
+    <p><strong>Email:</strong> {{ request.user.email }}</p>
+
+    <div style="margin-top: 20px;">
+        <a href="{% url 'home' %}" class="btn">На главную</a>
+        <a href="{% url 'logout' %}" class="btn btn-logout">Выйти</a>
+    </div>
+</div>
+{% endblock %}
